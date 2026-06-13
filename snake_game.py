@@ -23,8 +23,8 @@ SCORE_COLOR = (255, 255, 255)
 snake_block = 20
 clock = pygame.time.Clock()
 
-font_style = pygame.font.SysFont('comicsansms', 30)
-score_font = pygame.font.SysFont('comicsansms', 20)
+font_style = pygame.font.SysFont('oswald', 30)
+score_font = pygame.font.SysFont('oswald', 20)
 
 def display_score(score):
     value = score_font.render("Score: " + str(score), True, SCORE_COLOR)
@@ -52,7 +52,7 @@ def generate_apple(snake_body):
 
 def select_difficulty():
     screen.fill(BACKGROUND_COLOR)
-    message("Select Difficulty: E=Easy M=Medium H=Hard N=Nightmare", SCORE_COLOR)
+    message("Select Difficulty: E=Easy, M=Medium, H=Hard, N=Nightmare", SCORE_COLOR)
     pygame.display.update()
 
     difficulty = None
